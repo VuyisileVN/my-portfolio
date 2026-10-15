@@ -72,43 +72,50 @@ function App() {
         </div>
       </nav>
 
-      {/* Home */}
+      {/* Home - Background picture only */}
       <section id="home" className="hero">
-        <p className="eyebrow">COMPUTER SCIENCE STUDENT</p>
+        <div className="hero-decoration hero-decoration-one"></div>
+        <div className="hero-decoration hero-decoration-two"></div>
 
-        <h1>
-          Hi, I'm <span>Vuyisile</span>
-        </h1>
+        <div className="hero-content">
+          <p className="eyebrow">COMPUTER SCIENCE STUDENT</p>
 
-        <h2>Aspiring Software Developer</h2>
+          <h1>
+            Hi, I'm <span>Vuyisile</span>
+          </h1>
 
-        <p className="hero-description">
-          I am a Computer Science student passionate about
-          learning software development and building practical
-          applications. I am seeking a Work-Integrated Learning
-          opportunity where I can improve my skills, gain
-          real-world experience, and contribute to a team.
-        </p>
+          <h2>Aspiring Software Developer</h2>
 
-        <div className="hero-buttons">
-          <a href="#projects" className="gold-button">
-            View My Projects
-          </a>
+          <p className="hero-description">
+            I am a Computer Science student studying at Tshwane University of Technology and i am passionate about
+            learning software development and building practical
+            applications. I am seeking a Work-Integrated Learning
+            opportunity where I can improve my skills, gain
+            real-world experience, and contribute to a team.
+          </p>
 
-          <a href="#contact" className="outline-button">
-            Contact Me
-          </a>
+          <div className="hero-buttons">
+            <a href="#projects" className="gold-button">
+              View My Projects
+            </a>
+
+            <a href="#contact" className="outline-button">
+              Contact Me
+            </a>
+          </div>
+
+          <div className="hero-socials">
+            <a
+              href="https://github.com/VuyisileVN"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Visit My GitHub ↗
+            </a>
+          </div>
         </div>
 
-        <div className="hero-socials">
-          <a
-            href="https://github.com/VuyisileVN"
-            target="_blank"
-            rel="noreferrer"
-          >
-            Visit My GitHub ↗
-          </a>
-        </div>
+        <div className="hero-bottom-line"></div>
       </section>
 
       {/* About */}
@@ -211,7 +218,9 @@ function App() {
                       PROJECT {String(index + 1).padStart(2, "0")}
                     </p>
 
-                    <h3>{project.name.replace(/[-_]/g, " ")}</h3>
+                    <h3>
+                      {project.name.replace(/[-_]/g, " ")}
+                    </h3>
 
                     <p className="project-description">
                       {project.description}
@@ -270,7 +279,7 @@ function App() {
           download="Vuyisile-CV.pdf"
           className="gold-button cv-button"
         >
-        Download My CV ↓
+          Download My CV ↓
         </a>
       </section>
 
